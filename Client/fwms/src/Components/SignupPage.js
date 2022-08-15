@@ -8,7 +8,7 @@ const SignupPage=()=>{
     const [user,setUser]=useState({name:"",username:"",password:"",gender:"Male",age:"",email:"",mob_no:""})
     const [validation,setValidation]=useState({vcpassword:"",vage:"",vemail:"",vmob_no:""})
     const [dis,setDis]=useState("disabled")
-    const [checked,setChecked]=useState(false)
+    const [checked,setChecked]=useState(false)  
     const [type,setType]=useState("volunteer")
     const [reason,setReason]=useState("")
     const pref=useRef()

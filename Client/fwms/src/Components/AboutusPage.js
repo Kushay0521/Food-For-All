@@ -3,8 +3,13 @@ import '../../node_modules/bootstrap/dist/css/bootstrap.css';
 import aboutstyles from '../Components/AboutusPage.module.css';
 // import '../../node_modules/bootstrap/dist/js/bootstrap.bundle.js';
 
-const AboutusPage = () =>{ 
-    return (
+
+import safety from "../Images/safety.jpg";
+import clock from "../Images/clock.png";
+import customercare from "../Images/customercare.jfif";
+
+const AboutusPage = () =>{
+    return ( 
       <React.Fragment>
       <h1 className={aboutstyles.first}>About Us</h1>
         <div className="container">
@@ -12,17 +17,7 @@ const AboutusPage = () =>{
             <ul>
                 <li>
                     <p>
-                        From this website, you can search the buses according to your convenient.
-                        Additionally, you will be able to register a bus ticket according to your choice !!!
-                        Our buses are full with grand facilities with AC, very comfortable seats, extra space for your
-                        important luggage and also TV in our buses to make your journey with full of entertainment !
-                        Under any unexpected circumstances, you can also cancel your tickets and get full refund !
-                    </p>
-                </li> 
-                <li>
-                    <p>
-                        We are providing helpfull and disiplined members at each busport they are ready to guide you any
-                        time.
+                        Using this website, one can donate food to needy peoples and even one can donate cloth and vessel if one wants.Similarly, one can request food to needy peoples and even one can donate cloth and vessel if one wants.One can also join us as a volunteer to work with us.Volunteer willcolect the food or any donated items and will deliver to the allocated distribution area...   
                     </p>
                 </li>
                 <li>
@@ -38,19 +33,19 @@ const AboutusPage = () =>{
         <div className="row">
             <div className="col-md-4">
             <figure className={aboutstyles.figure , aboutstyles.fig1}>
-                <img src="../Images/safety.jpg" className="figure-img img-fluid rounded" alt="..."/>
+                <img src={safety} className="figure-img img-fluid rounded" alt="..."/>
                 <figcaption className={aboutstyles.figurecaption}>Quick Collection</figcaption>
             </figure>
             </div>
             <div className="col-md-4">
             <figure className={aboutstyles.figure , aboutstyles.fig2}>
-                <img src="./images/clock.png" className="figure-img img-fluid rounded" alt="..."/>
+                <img src={clock} className="figure-img img-fluid rounded" alt="..."/>
                 <figcaption className={aboutstyles.figurecaption}>Quick Delivery</figcaption>
               </figure>
             </div>
             <div className="col-md-4">
             <figure className={aboutstyles.figure , aboutstyles.fig3}>
-                <img src="./images/customercare.jfif" className="figure-img img-fluid rounded" alt="..."/>
+                <img src={customercare} className="figure-img img-fluid rounded" alt="..."/>
                 <figcaption className={aboutstyles.figurecaption}>Requesting Donations</figcaption>
             </figure>
             </div>

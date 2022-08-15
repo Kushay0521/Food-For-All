@@ -6,7 +6,7 @@ const DistributionArea=()=> {
     const [flag,setFlag]=useState(false)
     const [newarea,setNewarea]=useState({name:"",address:"",population:0})
     const [update,updateState]=useState()
-    const forceUpdate=useCallback(()=>updateState({}),[])    
+    const forceUpdate=useCallback(()=>updateState({}),[])     
     const PostData=async (e)=>{
         e.preventDefault();
         const {name,address,population}=newarea
